@@ -23,11 +23,8 @@ public class Main {
             recursive = true;
             dirArg++;
         }
-        System.out.println("rec="+recursive);
         String sourceStr = args[dirArg];
         String destStr = args[dirArg + 1];
-        System.out.println("source="+sourceStr);
-        System.out.println("targ="+destStr);
         File source = new File(sourceStr);
         File destination = new File(destStr);
         int sourceCount = source.toPath().getNameCount();
