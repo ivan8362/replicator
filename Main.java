@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        if (args.length == 0 || args.length > 3) {
+        if (args.length < 2 || args.length > 3) {
             usage();
         }
         boolean recursive = false;
