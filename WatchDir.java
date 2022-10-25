@@ -73,7 +73,7 @@ public class WatchDir {
                                 e.printStackTrace();
                             }
                         }
-                        int count = child.getNameCount();//6
+                        int count = child.getNameCount();
                         Path relativeTar = child.subpath(sourceCount, count);
                         Path forTarget = destination.resolve(relativeTar);
                         if (Files.isDirectory(child)) {
@@ -91,7 +91,7 @@ public class WatchDir {
                         System.out.println("New path modified: " + newPath);
 
                         Path child = dir.resolve(newPath);
-                        int count = child.getNameCount();//6
+                        int count = child.getNameCount();
                         Path relativeTar = child.subpath(sourceCount, count);
                         Path forTarget = destination.resolve(relativeTar);
                         Files.delete(forTarget);
